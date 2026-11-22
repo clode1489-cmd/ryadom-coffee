@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Рядом — демо сайта независимой кофейни. Кофе, свежая выпечка и завтраки. Концепт Pixelto Studio.">
+  <meta name="theme-color" content="#f6f0e7">
+  <meta name="robots" content="noindex">
+  <title>Рядом — кофейня на каждый день</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="wrap site-header">
+    <a class="wordmark" href="#top" aria-label="Рядом — на главную">рядом<span>.</span></a>
+    <nav aria-label="Разделы сайта">
+      <a href="#menu">Меню</a>
+      <a href="#about">О кофейне</a>
+    </nav>
+    <a class="button button-border" href="#visit">Как нас найти</a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Кофейня в Симферополе</p>
+        <h1 id="hero-title">Хороший кофе<br>всегда <em>рядом.</em></h1>
+        <p class="hero-text">Кофе из свежего зерна, круассаны из печи и завтраки до полудня. Заходите по дороге или оставайтесь подольше.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Посмотреть меню</a>
+          <span class="hero-hours">Ежедневно с 08:00</span>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/hero.webp" alt="Капучино в красной чашке и круассан на солнечном столике" width="1060" height="1280" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section id="menu" class="menu-section" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="menu-title">Меню</h2>
+          <p>Эспрессо перед работой, завтрак на двоих или десерт к чашке фильтра.</p>
+        </div>
+        <div class="menu-controls" aria-label="Категории меню" hidden>
+          <button type="button" data-filter="coffee" aria-pressed="true">Кофе</button>
+          <button type="button" data-filter="cold" aria-pressed="false">Холодные напитки</button>
+          <button type="button" data-filter="breakfast" aria-pressed="false">Завтраки</button>
+          <button type="button" data-filter="bakes" aria-pressed="false">Выпечка и десерты</button>
+        </div>
+        <div class="menu-layout">
+          <div class="menu-list">
+            <section data-menu="coffee" aria-labelledby="coffee-title">
+              <h3 id="coffee-title">Кофе</h3>
+              <ul>
+                <li><div><strong>Эспрессо</strong><p>Плотный и насыщенный · 35 мл</p></div><span>160 ₽</span></li>
+                <li><div><strong>Фильтр-кофе</strong><p>Зерно дня · 200 мл</p></div><span>210 ₽</span></li>
+                <li><div><strong>Капучино</strong><p>Эспрессо и воздушная молочная пена · 250 мл</p></div><span>250 ₽</span></li>
+                <li><div><strong>Флэт уайт</strong><p>Двойной эспрессо и молоко · 180 мл</p></div><span>280 ₽</span></li>
+              </ul>
+            </section>
+            <section data-menu="cold" aria-labelledby="cold-title">
+              <h3 id="cold-title">Холодные напитки</h3>
+              <ul>
+                <li><div><strong>Айс-латте</strong><p>Эспрессо, молоко и лёд · 350 мл</p></div><span>290 ₽</span></li>
+                <li><div><strong>Бамбл</strong><p>Эспрессо и апельсиновый сок · 350 мл</p></div><span>330 ₽</span></li>
+                <li><div><strong>Лимонад с базиликом</strong><p>Лимон, базилик и содовая · 350 мл</p></div><span>280 ₽</span></li>
+              </ul>
+            </section>
+            <section data-menu="breakfast" aria-labelledby="breakfast-title">
+              <h3 id="breakfast-title">Завтраки</h3>
+              <p class="menu-hours">Ежедневно с 08:00 до 12:00</p>
+              <ul>
+                <li><div><strong>Фирменные сырники</strong><p>Со сметаной и вареньем из чёрной смородины · 180 г</p></div><span>390 ₽</span></li>
+                <li><div><strong>Скрэмбл на тосте</strong><p>На хлебе на закваске с зеленью · 210 г</p></div><span>420 ₽</span></li>
+                <li><div><strong>Овсяная каша</strong><p>С печёным яблоком и корицей · 250 г</p></div><span>310 ₽</span></li>
+              </ul>
+            </section>
+            <section data-menu="bakes" aria-labelledby="bakes-title">
+              <h3 id="bakes-title">Выпечка и десерты</h3>
+              <ul>
+                <li><div><strong>Сливочный круассан</strong><p>С хрустящей корочкой · 75 г</p></div><span>190 ₽</span></li>
+                <li><div><strong>Миндальный круассан</strong><p>С миндальным кремом · 105 г</p></div><span>270 ₽</span></li>
+                <li><div><strong>Чизкейк с ягодами</strong><p>С ягодным соусом · 130 г</p></div><span>340 ₽</span></li>
+              </ul>
+            </section>
+          </div>
+          <figure class="menu-media">
+            <img src="assets/menu.webp" alt="Айс-латте, круассан и чизкейк с ягодами" width="900" height="600" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about wrap" aria-labelledby="about-title">
+      <img src="assets/counter.webp" alt="Деревянная стойка с оливковой плиткой и кофемашиной" width="1060" height="795" loading="lazy">
+      <div class="about-copy">
+        <h2 id="about-title">Сырники со<br>смородиной</h2>
+        <p>Наш фирменный завтрак — тёплые сырники с хрустящей корочкой. Подаём их с густой сметаной и вареньем из чёрной смородины: она даёт ту самую кислинку, за которой хочется зачерпнуть ещё ложку.</p>
+        <a class="button button-border breakfast-link" href="#breakfast-title">Посмотреть завтраки</a>
+      </div>
+    </section>
+
+    <section id="visit" class="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-inner">
+        <h2 id="visit-title">Заглядывайте<br>на кофе</h2>
+        <div class="visit-details">
+          <div><h3>Точка для примера маршрута</h3><p>Симферополь,<br>Екатерининский сад</p></div>
+          <div><h3>Пример часов работы</h3><p>Пн–пт · 08:00–21:00<br>Сб–вс · 08:00–22:00</p></div>
+          <a class="button route-button" href="https://yandex.ru/maps/?mode=routes&amp;rtext=~44.952179%2C34.105688&amp;rtt=pd">Открыть маршрут в Яндекс Картах</a>
+          <p class="demo-note">«Рядом» — вымышленная кофейня. Маршрут ведёт к городскому саду, цены приведены для примера.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <a class="wordmark" href="#top" aria-label="Рядом — наверх">рядом<span>.</span></a>
+    <p>Демо вымышленной кофейни от Pixelto Studio</p>
+    <a class="back" href="#top">Наверх</a>
+  </footer>
+</body>
+</html>
